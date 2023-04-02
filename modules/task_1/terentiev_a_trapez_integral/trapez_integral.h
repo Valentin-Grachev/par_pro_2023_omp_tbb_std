@@ -22,4 +22,4 @@ double TrapezIntegral3D(double fromX, double fromY, double fromZ, double toX,
                         double toY, double toZ, int steps,
                         double (*func)(double, double, double));
 
-#endif //  MODULES_TASK_1_TERENTIEV_A_TRAPEZ_INTEGRAL_TRAPEZ_INTEGRAL_H_
+#endif  // MODULES_TASK_1_TERENTIEV_A_TRAPEZ_INTEGRAL_TRAPEZ_INTEGRAL_H_
