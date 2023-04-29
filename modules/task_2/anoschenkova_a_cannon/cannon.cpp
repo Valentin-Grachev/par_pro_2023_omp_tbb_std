@@ -72,11 +72,13 @@ matrix BlockMult(const matrix &A, const matrix &B, const int &blockSize) {
     int jjMin, kkMin;
     matrix res(n, std::vector<double>(n, 0));
 
-#pragma omp parallel for
+
     for (int jj = 0; jj < n; jj += blockSize) {
         jjMin = std::min(jj + blockSize, n);
        for (int kk = 0; kk < n; kk += blockSize) {
            kkMin = std::min(kk+ blockSize, n);
+
+#pragma omp parallel for
            for (int i = 0; i < n; i++) {
                for (int k = kk; k < kkMin; k++) {
                    for (int j = jj; j < jjMin; j++) {
