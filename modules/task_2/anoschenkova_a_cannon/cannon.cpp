@@ -6,6 +6,7 @@
 #include <vector>
 #include "../../../modules/task_2/anoschenkova_a_cannon/cannon.h"
 
+
 matrix RandomMat(const int n) {
     std::mt19937 generator;
     std::random_device device;
